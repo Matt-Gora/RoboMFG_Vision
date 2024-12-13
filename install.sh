@@ -44,7 +44,7 @@ link_extension()
 install_dependencies()
 {
     echo "Installing dependencies..."
-    ~/klippy-env/bin/pip install -v opencv-python
+    # ~/klippy-env/bin/pip install -v opencv-python
     ~/klippy-env/bin/pip install -v "${SRCDIR}/baumer_neoapi-1.4.1-cp34.cp35.cp36.cp37.cp38.cp39.cp310.cp311.cp312-none-linux_armv7l.whl"
 }
 
