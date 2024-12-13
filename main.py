@@ -15,15 +15,15 @@ class cameracontrol:
 
         # Read configuration parameters from the klipper config file 
         self.save_path = config.get('save_path', '/tmp')
-        self.camera_features = {
-            'PixelFormat': config.get('pixel_format', 'RGB8'),
-            'ExposureTime': config.getfloat('exposure_time', 1000),
-            'Gain': config.getfloat('gain', 10),
-            'Gamma': config.getfloat('gamma', 1)
-            }
+        # self.camera_features = {
+        #     'PixelFormat': config.get('pixel_format', 'RGB8'),
+        #     'ExposureTime': config.getfloat('exposure_time', 1000),
+        #     'Gain': config.getfloat('gain', 10),
+        #     'Gamma': config.getfloat('gamma', 1)
+        #     }
 
         self._connect_cam()
-        self._set_camera_features()
+        # self._set_camera_features()
 
         # Register G-Code command
         # Example usage: `CAPTURE_IMG CAM=mycam SAVE=1`
