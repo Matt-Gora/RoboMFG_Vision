@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-import cv2
+# import cv2
 import neoapi
-import os
-from time import strftime, gmtime
+# import os
+# from time import strftime, gmtime
 
 class cameracontrol:
     cmd_CAPTUREIMG_help = "Capture an image from the camera and optionally save it."
