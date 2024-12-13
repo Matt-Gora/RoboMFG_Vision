@@ -5,7 +5,7 @@ import neoapi
 import os
 from time import strftime, gmtime
 
-class CameraControl:
+class cameracontrol:
     cmd_CAPTUREIMG_help = "Capture an image from the camera and optionally save it."
 
     def __init__(self, config):
@@ -13,7 +13,7 @@ class CameraControl:
         self.printer = config.get_printer()
         self.gcode = self.printer.lookup_object('gcode')
 
-        # Read configuration parameters from the klipper config file
+        # Read configuration parameters from the klipper config file 
         self.save_path = config.get('save_path', '/tmp')
         self.camera_features = {
             'PixelFormat': config.get('pixel_format', 'RGB8'),
@@ -82,4 +82,4 @@ class CameraControl:
             self.gcode.respond_info("Image captured (not saved).")
 
 def load_config_prefix(config):
-    return CameraControl(config)
+    return cameracontrol(config)
